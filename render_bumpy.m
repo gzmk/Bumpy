@@ -44,9 +44,9 @@ ShowXYZAndSRGB([], SRGBMontage, montageName);
 setpref('RenderToolbox3', 'workingFolder', '/users2/gizem/Documents/Research/Bumpy');
 
 % use this scene and condition file. 
-parentSceneFile = 'bumpy1_hemilight.dae';
+parentSceneFile = 'bumpy2_hemilight.dae';
 
-mappingsFile = 'bumpy1_hemilightDefaultMappings.txt';
+mappingsFile = 'bumpy2_hemilightDefaultMappings.txt';
 
 % Make sure all illuminants are added to the path. 
 addpath(genpath(pwd))
@@ -79,9 +79,9 @@ ShowXYZAndSRGB([], SRGBMontage, montageName);
 setpref('RenderToolbox3', 'workingFolder', '/users2/gizem/Documents/Research/Bumpy');
 
 % use this scene and condition file. 
-parentSceneFile = 'bumpy1_hemilight.dae';
+parentSceneFile = 'bumpy3_hemilight.dae';
 
-mappingsFile = 'bumpy1_hemilightDefaultMappings.txt';
+mappingsFile = 'bumpy3_hemilightDefaultMappings.txt';
 
 % Make sure all illuminants are added to the path. 
 addpath(genpath(pwd))
@@ -114,9 +114,9 @@ ShowXYZAndSRGB([], SRGBMontage, montageName);
 setpref('RenderToolbox3', 'workingFolder', '/users2/gizem/Documents/Research/Bumpy');
 
 % use this scene and condition file. 
-parentSceneFile = 'bumpy1_hemilight.dae';
+parentSceneFile = 'bumpy4_hemilight.dae';
 
-mappingsFile = 'bumpy1_hemilightDefaultMappings.txt';
+mappingsFile = 'bumpy4_hemilightDefaultMappings.txt';
 
 % Make sure all illuminants are added to the path. 
 addpath(genpath(pwd))
@@ -128,7 +128,6 @@ hints.imageWidth = 960;
 hints.imageHeight = 960;
 hints.renderer = 'Mitsuba';
 hints.recipeName = ['Test-' date];
-
 
 ChangeToWorkingFolder(hints);
 
@@ -149,9 +148,9 @@ ShowXYZAndSRGB([], SRGBMontage, montageName);
 setpref('RenderToolbox3', 'workingFolder', '/users2/gizem/Documents/Research/Bumpy');
 
 % use this scene and condition file. 
-parentSceneFile = 'bumpy1_hemilight.dae';
+parentSceneFile = 'bumpy5_hemilight.dae';
 
-mappingsFile = 'bumpy1_hemilightDefaultMappings.txt';
+mappingsFile = 'bumpy5_hemilightDefaultMappings.txt';
 
 % Make sure all illuminants are added to the path. 
 addpath(genpath(pwd))
