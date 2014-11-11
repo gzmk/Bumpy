@@ -22,7 +22,11 @@ addpath(genpath(pwd))
 hints.imageWidth = 960;
 hints.imageHeight = 960;
 hints.renderer = 'Mitsuba';
-hints.recipeName = ['Test-' date];
+datetime=datestr(now);
+datetime=strrep(datetime,':','_'); %Replace colon with underscore
+datetime=strrep(datetime,'-','_');%Replace minus sign with underscore
+datetime=strrep(datetime,' ','_');%Replace space with underscore
+hints.recipeName = ['Test-' datetime];
 
 
 ChangeToWorkingFolder(hints);
@@ -33,7 +37,7 @@ radianceDataFiles = BatchRender(nativeSceneFiles, hints);
 %comment all this out
 toneMapFactor = 10;
 isScale = true;
-montageName = sprintf('%s (%s)', 'BumpyTestHDR', hints.renderer);
+montageName = sprintf('%s (%s)', 'Level1', hints.renderer);
 montageFile = [montageName '.png'];
 [SRGBMontage, XYZMontage] = ...
     MakeMontage(radianceDataFiles, montageFile, toneMapFactor, isScale, hints);
@@ -57,8 +61,11 @@ addpath(genpath(pwd))
 hints.imageWidth = 960;
 hints.imageHeight = 960;
 hints.renderer = 'Mitsuba';
-hints.recipeName = ['Test-' date];
-
+datetime=datestr(now);
+datetime=strrep(datetime,':','_'); %Replace colon with underscore
+datetime=strrep(datetime,'-','_');%Replace minus sign with underscore
+datetime=strrep(datetime,' ','_');%Replace space with underscore
+hints.recipeName = ['Test-' datetime];
 
 ChangeToWorkingFolder(hints);
 
@@ -68,7 +75,7 @@ radianceDataFiles = BatchRender(nativeSceneFiles, hints);
 %comment all this out
 toneMapFactor = 10;
 isScale = true;
-montageName = sprintf('%s (%s)', 'BumpyTestHDR', hints.renderer);
+montageName = sprintf('%s (%s)', 'Level2', hints.renderer);
 montageFile = [montageName '.png'];
 [SRGBMontage, XYZMontage] = ...
     MakeMontage(radianceDataFiles, montageFile, toneMapFactor, isScale, hints);
@@ -92,8 +99,11 @@ addpath(genpath(pwd))
 hints.imageWidth = 960;
 hints.imageHeight = 960;
 hints.renderer = 'Mitsuba';
-hints.recipeName = ['Test-' date];
-
+datetime=datestr(now);
+datetime=strrep(datetime,':','_'); %Replace colon with underscore
+datetime=strrep(datetime,'-','_');%Replace minus sign with underscore
+datetime=strrep(datetime,' ','_');%Replace space with underscore
+hints.recipeName = ['Test-' datetime];
 
 ChangeToWorkingFolder(hints);
 
@@ -103,7 +113,7 @@ radianceDataFiles = BatchRender(nativeSceneFiles, hints);
 %comment all this out
 toneMapFactor = 10;
 isScale = true;
-montageName = sprintf('%s (%s)', 'BumpyTestHDR', hints.renderer);
+montageName = sprintf('%s (%s)', 'Level3', hints.renderer);
 montageFile = [montageName '.png'];
 [SRGBMontage, XYZMontage] = ...
     MakeMontage(radianceDataFiles, montageFile, toneMapFactor, isScale, hints);
@@ -127,7 +137,11 @@ addpath(genpath(pwd))
 hints.imageWidth = 960;
 hints.imageHeight = 960;
 hints.renderer = 'Mitsuba';
-hints.recipeName = ['Test-' date];
+datetime=datestr(now);
+datetime=strrep(datetime,':','_'); %Replace colon with underscore
+datetime=strrep(datetime,'-','_');%Replace minus sign with underscore
+datetime=strrep(datetime,' ','_');%Replace space with underscore
+hints.recipeName = ['Test-' datetime];
 
 ChangeToWorkingFolder(hints);
 
@@ -137,7 +151,7 @@ radianceDataFiles = BatchRender(nativeSceneFiles, hints);
 %comment all this out
 toneMapFactor = 10;
 isScale = true;
-montageName = sprintf('%s (%s)', 'BumpyTestHDR', hints.renderer);
+montageName = sprintf('%s (%s)', 'Level4', hints.renderer);
 montageFile = [montageName '.png'];
 [SRGBMontage, XYZMontage] = ...
     MakeMontage(radianceDataFiles, montageFile, toneMapFactor, isScale, hints);
@@ -161,8 +175,11 @@ addpath(genpath(pwd))
 hints.imageWidth = 960;
 hints.imageHeight = 960;
 hints.renderer = 'Mitsuba';
-hints.recipeName = ['Test-' date];
-
+datetime=datestr(now);
+datetime=strrep(datetime,':','_'); %Replace colon with underscore
+datetime=strrep(datetime,'-','_');%Replace minus sign with underscore
+datetime=strrep(datetime,' ','_');%Replace space with underscore
+hints.recipeName = ['Test-' datetime];
 
 ChangeToWorkingFolder(hints);
 
@@ -172,7 +189,7 @@ radianceDataFiles = BatchRender(nativeSceneFiles, hints);
 %comment all this out
 toneMapFactor = 10;
 isScale = true;
-montageName = sprintf('%s (%s)', 'BumpyTestHDR', hints.renderer);
+montageName = sprintf('%s (%s)', 'Level5', hints.renderer);
 montageFile = [montageName '.png'];
 [SRGBMontage, XYZMontage] = ...
     MakeMontage(radianceDataFiles, montageFile, toneMapFactor, isScale, hints);
