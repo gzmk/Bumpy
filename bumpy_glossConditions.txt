@@ -1,4 +1,6 @@
 imageName		groupName
-materialSphereMatte	matteGroup
-materialSphereWard	wardGroup
-materialSphereMetal	metalGroup
+materialLevel1	wardlevel1
+materialLevel2	wardlevel2
+materialLevel3	wardlevel3
+materialLevel4  wardlevel4
+materialLevel5  wardlevel5
