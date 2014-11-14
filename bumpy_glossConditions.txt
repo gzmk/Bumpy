@@ -1,6 +1,6 @@
-imageName		groupName
-materialLevel1	wardlevel1
-materialLevel2	wardlevel2
-materialLevel3	wardlevel3
-materialLevel4  wardlevel4
-materialLevel5  wardlevel5
+uval	vval
+1.0	1.0
+0.8	0.8
+0.6	0.6
+0.4	0.4
+0.2	0.2

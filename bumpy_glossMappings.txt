@@ -3,56 +3,14 @@ Collada {
     Camera:scale|sid=scale = -1 1 1
 }
 
-% flip the camera handedness to match Blender-Collada output to Mitsuba and PBRT
-Collada {
-    Camera:scale|sid=scale = -1 1 1
-}
-
-% material with lowest gloss level (a.k.a matte)
-Generic wardlevel1 {
+% material 
+Generic {
 	Material-material:material:anisoward
-    Material-material:alphaU.float = 1.0
-    Material-material:alphaV.float = 1.0
+    Material-material:alphaU.float = (uval)
+    Material-material:alphaV.float = (vval)
 	Material-material:diffuseReflectance.spectrum = mccBabel-7.spd
 
 }
-
-% material with gloss level "2"
-Generic wardlevel2 {
-	Material-material:material:anisoward
-    Material-material:alphaU.float = 0.8
-    Material-material:alphaV.float = 0.8
-	Material-material:diffuseReflectance.spectrum = mccBabel-7.spd
-
-}
-
-% material with gloss level "3"
-Generic wardlevel3 {
-	Material-material:material:anisoward
-    Material-material:alphaU.float = 0.6
-    Material-material:alphaV.float = 0.6
-	Material-material:diffuseReflectance.spectrum = mccBabel-7.spd
-
-}
-
-% material with gloss level "4"
-Generic wardlevel4 {
-	Material-material:material:anisoward
-    Material-material:alphaU.float = 0.4
-    Material-material:alphaV.float = 0.4
-	Material-material:diffuseReflectance.spectrum = mccBabel-7.spd
-
-}
-
-% material with gloss level "5" (highest gloss)
-Generic wardlevel5 {
-	Material-material:material:anisoward
-    Material-material:alphaU.float = 0.2
-    Material-material:alphaV.float = 0.2
-	Material-material:diffuseReflectance.spectrum = mccBabel-7.spd
-
-}
-
 
 % lights
 Generic {
@@ -64,6 +22,6 @@ Generic {
 Mitsuba {
     % use the path integrator with lots of samples
     integrator:integrator:path
-    Camera-camera_sampler:sampleCount.integer = 320
+    Camera-camera_sampler:sampleCount.integer = 20
 }
 
