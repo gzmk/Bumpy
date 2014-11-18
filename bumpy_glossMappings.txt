@@ -15,13 +15,16 @@ Generic {
 % lights
 Generic {
 	Hemi-light:emitter:envmap
-	Hemi-light:filename.string = june4_exp30_f16_wetland2_cropped_bilinear.hdr
+	% Hemi-light:filename.string = june4_exp30_f16_wetland2_cropped_bilinear.hdr
+    % Hemi-light:filename.string = june9_coastdunes_f22_exp125_1_cropped_bilinear.hdr
+    % Hemi-light:filename.string = june12_exp30_f8_foc4_coniferous2_cropped_bilinear.hdr
+    Hemi-light:filename.string = june16_exp30_f11_focInf_mediumDens_2_cropped_bilinear.hdr
 
 }
 
 Mitsuba {
     % use the path integrator with lots of samples
     integrator:integrator:path
-    Camera-camera_sampler:sampleCount.integer = 20
+    Camera-camera_sampler:sampleCount.integer = 320
 }
 
