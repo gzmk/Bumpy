@@ -5,24 +5,15 @@ Collada {
 
 % materials
 Generic {
-	Material-material:material:anisoward
-    Material-material:alphaU.float = 0.2
-    Material-material:alphaV.float = 0.2
-	Material-material:diffuseReflectance.spectrum = mccBabel-7.spd
+	Material-material:material:matte
+	Material-material:diffuseReflectance.spectrum = mccBabel-1.spd
 
 }
 
 
 % lights
 Generic {
-	Hemi-light:emitter:envmap
-	Hemi-light:filename.string = june4_exp30_f16_wetland2_cropped_bilinear.hdr
+	Hemi-light:light:point
+	Hemi-light:intensity.spectrum = D65.spd
 
 }
-
-Mitsuba {
-    % use the path integrator with lots of samples
-    integrator:integrator:path
-    Camera-camera_sampler:sampleCount.integer = 320
-}
-
